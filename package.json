@@ -50,7 +50,7 @@
     "rollup-plugin-postcss": "4.0.2",
     "rollup-plugin-typescript2": "0.36.0",
     "rollup-watch": "4.3.1",
-    "semantic-release": "22.0.8",
+    "semantic-release": "^23.0.0",
     "typescript": "5.3.2"
   },
   "peerDependencies": {
@@ -65,12 +65,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nekzus/hacker-effect-text"
+    "url": "https://github.com/Nekzus/letter-hologram"
   },
   "bugs": {
-    "url": "https://github.com/Nekzus/hacker-effect-text/issues"
+    "url": "https://github.com/Nekzus/letter-hologram/issues"
   },
-  "homepage": "https://github.com/Nekzus/hacker-effect-text",
+  "homepage": "https://github.com/Nekzus/letter-hologram",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
