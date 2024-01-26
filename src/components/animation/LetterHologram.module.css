@@ -1,0 +1,132 @@
+:root {
+  --card-size: 450px;
+  --font-size: 0.8rem;
+}
+
+.card-gradient.defaultColor,
+.card-gradient {
+  background: radial-gradient(
+    rgb(30, 41, 59) 20%,
+    rgb(41, 121, 255) 50%,
+    rgb(56, 182, 255),
+    rgb(42, 252, 152)
+  );
+}
+
+.card-gradient.blueColor {
+  background: radial-gradient(
+    rgb(30, 41, 59),
+    rgb(30, 41, 255) 50%,
+    rgb(30, 41, 255),
+    rgb(30, 41, 255)
+  );
+}
+
+.card-gradient.greenColor {
+  background: radial-gradient(
+    rgb(30, 41, 59),
+    rgb(30, 255, 59) 50%,
+    rgb(30, 255, 59),
+    rgb(30, 255, 59)
+  );
+}
+
+.card-gradient.pinkColor {
+  background: radial-gradient(
+    rgb(30, 41, 59),
+    rgb(255, 105, 180) 50%,
+    rgb(255, 182, 193),
+    rgb(255, 20, 147)
+  );
+}
+
+.card-gradient.orangeColor {
+  background: radial-gradient(
+    rgb(30, 41, 59),
+    rgb(255, 165, 0) 50%,
+    rgb(255, 140, 0),
+    rgb(255, 99, 71)
+  );
+}
+
+.card-gradient.darkColor {
+  background: radial-gradient(
+    rgb(30, 41, 59),
+    rgb(105, 105, 105) 50%,
+    rgb(128, 128, 128),
+    rgb(169, 169, 169)
+  );
+}
+
+.card-gradient.lightColor {
+  background: radial-gradient(
+    rgb(30, 41, 59),
+    rgb(255, 255, 240) 50%,
+    rgb(255, 250, 240),
+    rgb(255, 255, 255)
+  );
+}
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-letters {
+  --x: 0px;
+  --y: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: var(--font-size);
+  font-weight: 500;
+  word-wrap: break-word;
+  opacity: 0;
+  transition: opacity 0.3s ease, opacity 200ms;
+  -webkit-mask-image: radial-gradient(
+    calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+    rgb(255 255 255) 20%,
+    rgb(255 255 255 / 25%),
+    transparent
+  );
+  mask-image: radial-gradient(
+    calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+    rgb(255 255 255) 20%,
+    rgb(255 255 255 / 25%)
+  );
+  scale: 1.03;
+}
+
+.card-wrap-child {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.card-gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  mix-blend-mode: darken;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.card:hover .card-letters {
+  opacity: 1;
+}
+
+.card:hover .card-gradient {
+  opacity: 1;
+}

@@ -1,0 +1,82 @@
+{
+  "name": "@nekzus/react-letter-hologram",
+  "version": "0.0.0-development",
+  "description": "React Letter Hologram",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "types": "build/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "text-animation",
+    "hacker-effect",
+    "animated-text",
+    "ui",
+    "user-interface",
+    "front-end",
+    "web-development",
+    "npm-package",
+    "hackathon",
+    "creative",
+    "developer-tools"
+  ],
+  "author": "nekzus",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-typescript": "11.1.5",
+    "@types/css-modules": "1.0.5",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.2.16",
+    "cssnano": "6.0.1",
+    "cz-conventional-changelog": "3.3.0",
+    "parcel-bundler": "1.12.5",
+    "postcss-cssnext": "3.1.1",
+    "postcss-nested": "6.0.1",
+    "postcss-simple-vars": "7.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rollup": "4.5.0",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-css-only": "4.5.2",
+    "rollup-plugin-dts": "6.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-postcss": "4.0.2",
+    "rollup-plugin-typescript2": "0.36.0",
+    "rollup-watch": "4.3.1",
+    "semantic-release": "22.0.8",
+    "typescript": "5.3.2"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "scripts": {
+    "start": "parcel --out-dir playground-build ./src/root/index.html",
+    "build": "rollup --config --bundleConfigAsCjs",
+    "watch": "rollup --config --bundleConfigAsCjs --watch",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release --branches main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nekzus/hacker-effect-text"
+  },
+  "bugs": {
+    "url": "https://github.com/Nekzus/hacker-effect-text/issues"
+  },
+  "homepage": "https://github.com/Nekzus/hacker-effect-text",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
