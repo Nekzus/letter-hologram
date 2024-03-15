@@ -1,7 +1,7 @@
 <div align="center">
 <img width="700" alt="templakz" src="https://res.cloudinary.com/dsvsl0b0b/image/upload/v1706374690/npm-package/pmknqveou1gvs5ldlntt.png">
 </div>
-
+<br>
 
 [![Github Workflow](https://github.com/nekzus/letter-hologram/actions/workflows/publish.yml/badge.svg?event=push)](https://github.com/Nekzus/letter-hologram/actions/workflows/publish.yml)
 [![npm-version](https://img.shields.io/npm/v/@nekzus/react-letter-hologram.svg)](https://www.npmjs.com/package/@nekzus/react-letter-hologram)

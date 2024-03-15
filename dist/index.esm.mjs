@@ -1,6 +1,4 @@
-'use strict';
-
-var React = require('react');
+import React, { useRef, useEffect } from 'react';
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -73,7 +71,7 @@ var generateRandomString = function (length) {
 var HoloBg = function (_a) {
     var _b, _c, _d;
     var children = _a.children, _e = _a.className, className = _e === void 0 ? "" : _e, _f = _a.colorClassName, colorClassName = _f === void 0 ? "defaultColor" : _f, style = _a.style;
-    var cardRef = React.useRef(null);
+    var cardRef = useRef(null);
     var handleMouseMove = function (e, card) {
         var rect = card.getBoundingClientRect();
         var x = e.clientX - rect.left;
@@ -97,7 +95,7 @@ var HoloBg = function (_a) {
             letters.innerText = generateRandomString(50000);
         }
     };
-    React.useEffect(function () {
+    useEffect(function () {
         var card = cardRef.current;
         if (!card)
             return;
@@ -121,5 +119,5 @@ var HoloBg = function (_a) {
         React.createElement("div", { className: "".concat(styles["card-letters"], " ").concat(styles[colorClassName]) })));
 };
 
-exports.HoloBg = HoloBg;
-//# sourceMappingURL=index.js.map
+export { HoloBg };
+//# sourceMappingURL=index.esm.mjs.map
